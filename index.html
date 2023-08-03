@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixStudio - Download Free Images</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/Image/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/Image/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Flaticon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="./assets/css/images.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- =========================
+          Preloader 
+    ========================= -->
+    <section class="preloader">
+      <div class="spinner"></div>
+    </section>
+
+    <!-- =========================
+          Go To Top Button 
+    ========================= -->
+    <div class="top-btn">
+      <button id="top">
+        <i class="fi fi-rr-arrow-small-up"></i>
+      </button>
+    </div>
+
+    <!-- =========================
+          Preview Section 
+    ========================= -->
+    <section class="preview-image">
+      <div class="preview-wrapper">
+        <div class="image-preview-container">
+          <img src="" id="preview-img" alt="preview-image" />
+          <i class="fi fi-br-expand" id="expand"></i>
+        </div>
+
+        <div class="image-preview-detail">
+          <div class="image-detail-container">
+            <span
+              >Image Details
+              <i style="cursor: pointer" class="fi fi-br-cross close"></i>
+            </span>
+
+            <div class="title-photographer">
+              <div class="title">
+                <p>Title</p>
+                <h2 id="title">Title</h2>
+              </div>
+              <div class="photographer">
+                <p>Capture By</p>
+                <h2 id="photographer">
+                  <i class="uil uil-camera"></i>Photographer
+                </h2>
+              </div>
+            </div>
+
+            <div class="save-like">
+              <button><i class="fi fi-br-bookmark"></i></button>
+              <button><i class="fi fi-br-heart"></i></button>
+            </div>
+
+            <button id="downloadImg">
+              <i class="fi fi-sr-download"></i>Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+          Full Screen Section 
+    ========================= -->
+    <section class="full-screen">
+      <img id="full-screen-img" src="" alt="full-screen-img" />
+      <i style="cursor: pointer" class="fi fi-br-cross close-full-screen"></i>
+    </section>
+
+    <!-- =========================
+          Header Section 
+    ========================= -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/Image/Logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <!-- =========================
+                Navbar 
+      ========================= -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="active"><a href="#">Images</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <!-- <li><a href="#">Contact</a></li> -->
+          <a href="./login.html" class="login">Login</a>
+        </ul>
+      </nav>
+
+      <!-- =========================
+                Menu Icon 
+      ========================= -->
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- =========================
+            Hero Section 
+    ========================= -->
+    <section class="hero-section">
+      <div class="wrapper">
+        <div class="text">
+          <h1>Find the Perfect Image for Your Project</h1>
+          <p>
+            Explore and Get Thousands of Best, <br />
+            Royalty Free Images by Best Photographers and Creators From Over the
+            World
+          </p>
+        </div>
+
+        <div class="search-form">
+          <i class="fi fi-br-search"></i>
+          <input
+            type="text"
+            placeholder="Search Free Images..."
+            id="search-images"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+          Main Gallery Section 
+    ========================= -->
+    <section class="gallery-section">
+      <div class="gallery-wrapper">
+        <!-- <div class="img-container">
+          <div class="img-details">
+            <div class="detail-wrapper">
+              <span class="title">Title</span>
+              <span class="photographer"><i class="uil uil-camera"></i> Photographer</span>
+            </div>
+          </div>
+          <img src="./assets/Image/Img_1.jpg" alt="image" />
+        </div> -->
+      </div>
+      <div class="btn">
+        <button id="load-more">Load More</button>
+      </div>
+    </section>
+
+    <!-- =========================
+          Footer Section 
+    ========================= -->
+    <footer>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/Image/Logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="text">
+        <p>
+          Copyright <i class="uil uil-copyright"></i>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | Download Images and Videos For Free | This
+          website is based on
+          <a href="https://www.pexels.com" target="_blank">Pexels.com</a> Api
+        </p>
+      </div>
+
+      <div class="social-links">
+        <span><i class="uil uil-facebook-f"></i></span>
+        <span><i class="uil uil-twitter"></i></span>
+        <span><i class="uil uil-instagram"></i></span>
+      </div>
+    </footer>
+
+    <!-- =========================
+        Custom JavaScript File 
+    ========================= -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="./assets/js/imagesApi.js" defer></script>
+  </body>
+</html>
