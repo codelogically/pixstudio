@@ -202,10 +202,19 @@ body {
   height: 100%;
   background-color: var(--white-color);
   padding: 5rem 5rem 0 0;
+  position: relative;
 }
 .image-preview-detail .image-detail-container {
   width: 100%;
   height: 100%;
+}
+.image-preview-detail .close {
+  font-size: 2rem;
+  color: var(--explore-950);
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+  cursor: pointer;
 }
 
 .image-detail-container span {
@@ -217,10 +226,7 @@ body {
   font-weight: 500;
   color: var(--grey-color);
 }
-.image-detail-container span i {
-  font-size: 2rem;
-  color: var(--explore-950);
-}
+
 .image-detail-container .title-photographer {
   width: 100%;
   display: flex;

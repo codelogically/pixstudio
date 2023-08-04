@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .top-btn {
     width: 3rem;
     height: 3rem;
@@ -38,34 +38,7 @@ html {
     gap: 2rem;
   }
 }
-@media screen and (max-width: 900px) {
-  .hero-section {
-    padding: 10rem 0 2.5rem;
-  }
-  .hero-section .wrapper {
-    max-width: 60rem;
-    width: 100%;
-  }
-  .hero-section .wrapper .text h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
-  .hero-section .wrapper .text p {
-    font-size: 1.5rem;
-    line-height: 2.8rem;
-  }
-  .wrapper .search-form {
-    width: 55rem;
-  }
-  footer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  footer .text p {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 0 2.5rem;
   }
@@ -116,17 +89,36 @@ html {
     justify-content: center;
   }
   .hero-section {
-    padding: 10rem 0 1.25rem;
+    padding: 10rem 0 2.5rem;
+  }
+  .hero-section .wrapper {
+    max-width: 60rem;
+    width: 100%;
+  }
+  .hero-section .wrapper .text h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .hero-section .wrapper .text p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+  .wrapper .search-form {
+    width: 55rem;
   }
   .gallery-section {
     padding: 0 3.75rem;
   }
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
   footer .text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .hero-section .wrapper {
     max-width: 50rem;
     width: 100%;
@@ -159,5 +151,8 @@ html {
   }
   .wrapper .search-form {
     width: 100%;
+  }
+  .gallery-section {
+    padding: 0 1.172rem;
   }
 }
