@@ -33,6 +33,15 @@ html {
   .gallery-section {
     padding: 0 7.5rem;
   }
+  .preview-image .preview-wrapper {
+    width: 90vw;
+  }
+  .preview-wrapper .image-preview-container {
+    width: 60%;
+  }
+  .preview-wrapper .image-preview-detail {
+    width: 40%;
+  }
   footer {
     flex-direction: column;
     gap: 2rem;
