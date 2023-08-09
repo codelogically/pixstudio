@@ -486,7 +486,13 @@ body {
   font-size: 1.8rem;
   line-height: 3.4rem;
   color: var(--explore-950);
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .text span {
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  color: var(--explore-950);
   transition: all 0.3s ease-in-out;
 }
 
@@ -494,6 +500,7 @@ body {
   position: relative;
   width: 80rem;
   height: 6rem;
+  margin-top: 2rem;
   border-radius: 1.5rem;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease-in-out;
@@ -611,7 +618,7 @@ body {
   background-color: transparent;
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -620,7 +627,7 @@ body {
   color: var(--explore-950);
 }
 
-/* Footer Design */
+/* Footer Design 
 
 footer {
   width: 100%;
@@ -659,4 +666,4 @@ footer .social-links {
 }
 .social-links span i:hover {
   color: var(--explore-600);
-}
+} */
