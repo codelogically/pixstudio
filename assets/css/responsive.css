@@ -173,7 +173,7 @@ html {
     line-height: 2.4rem;
   }
   .hero-section .wrapper .text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8rem;
   }
   .hero-section .wrapper .text span {
@@ -181,7 +181,7 @@ html {
     line-height: 1.8rem;
   }
   .wrapper .search-form {
-    width: 100%;
+    width: 80%;
   }
   .gallery-section {
     padding: 0 1.172rem;
