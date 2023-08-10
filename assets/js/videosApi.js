@@ -38,7 +38,7 @@ const downloadVideo = async () => {
     .then((file) => {
       const a = document.createElement("a");
       a.href = URL.createObjectURL(file);
-      a.download = `pixhub-video-${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}`;
+      a.download = `pixstudio-video-${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}`;
       a.click();
     })
     .catch(() => {

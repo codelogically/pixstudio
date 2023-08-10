@@ -55,7 +55,7 @@ const downloadImg = () => {
     .then((file) => {
       const a = document.createElement("a");
       a.href = URL.createObjectURL(file);
-      a.download = `pixhub-image-${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}`;
+      a.download = `pixstudio-image-${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}`;
       a.click();
     })
     .catch(() => {
