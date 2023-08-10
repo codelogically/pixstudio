@@ -20,6 +20,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* @media screen and (max-width: 1200px) {
+  .container .login-wrapper {
+    width: 50%;
+  }
+  .container .slider-container {
+    width: 50%;
+  }
+} */
+
 @media screen and (max-width: 1024px) {
   .top-btn {
     width: 3rem;
@@ -42,6 +51,26 @@ html {
   .preview-wrapper .image-preview-detail {
     width: 40%;
   }
+
+  .login-form .social-media-login {
+    width: 100%;
+  }
+  .login-form form .input-field {
+    width: 100%;
+  }
+  .login-form form a {
+    width: 100%;
+  }
+  .login-form .loginBtn {
+    width: 100%;
+  }
+  .container .login-wrapper {
+    width: 50%;
+  }
+  .container .slider-container {
+    width: 50%;
+  }
+
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -118,6 +147,16 @@ html {
   .gallery-section {
     padding: 0 3.75rem;
   }
+
+  .social-media-login button {
+    width: 15rem;
+  }
+  .container .login-wrapper {
+    width: 100%;
+  }
+  .container .slider-container {
+    display: none;
+  }
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -165,7 +204,7 @@ html {
     justify-content: center;
   }
   .hero-section .wrapper {
-    max-width: 45rem;
+    max-width: 40rem;
     width: 100%;
   }
   .hero-section .wrapper .text h1 {
@@ -181,9 +220,49 @@ html {
     line-height: 1.8rem;
   }
   .wrapper .search-form {
-    width: 80%;
+    width: 100%;
   }
   .gallery-section {
     padding: 0 1.172rem;
+  }
+
+  .container .login-wrapper {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav-links li {
+    width: 60%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-links a {
+    width: 60%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section .wrapper {
+    max-width: 30rem;
+    width: 100%;
+  }
+  .hero-section .wrapper .text h1 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .hero-section .wrapper .text p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .wrapper .search-form {
+    width: 100%;
+  }
+  .container .login-wrapper {
+    padding: 1rem;
   }
 }
