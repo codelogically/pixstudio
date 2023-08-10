@@ -20,15 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @media screen and (max-width: 1200px) {
-  .container .login-wrapper {
-    width: 50%;
-  }
-  .container .slider-container {
-    width: 50%;
-  }
-} */
-
 @media screen and (max-width: 1024px) {
   .top-btn {
     width: 3rem;
@@ -65,6 +56,26 @@ html {
     width: 100%;
   }
   .container .login-wrapper {
+    width: 50%;
+  }
+  .container .slider-container {
+    width: 50%;
+  }
+
+
+  .title h1 {
+    font-size: 2.8rem;
+  }
+  .register-form .social-media-register {
+    width: 100%;
+  }
+  .register-form form .input-field {
+    width: 100%;
+  }
+  .register-form .registerBtn {
+    width: 100%;
+  }
+  .container .register-wrapper {
     width: 50%;
   }
   .container .slider-container {
@@ -157,6 +168,14 @@ html {
   .container .slider-container {
     display: none;
   }
+
+  .container .register-wrapper {
+    width: 100%;
+  }
+  .social-media-register button {
+    width: 15rem;
+  }
+
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -229,6 +248,9 @@ html {
   .container .login-wrapper {
     padding: 4rem;
   }
+  .container .register-wrapper {
+    padding: 4rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -262,7 +284,17 @@ html {
   .wrapper .search-form {
     width: 60%;
   }
+
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .title p {
+    font-size: 1.4rem;
+  }
   .container .login-wrapper {
     padding: 1rem;
+  }
+  .container .register-wrapper {
+    padding: 4rem 1rem;
   }
 }
