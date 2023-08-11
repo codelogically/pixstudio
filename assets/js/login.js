@@ -25,14 +25,14 @@ var swiper = new Swiper(".mySwiper", {
 
 // Form Validation
 
-const email = document.getElementById("email");
+const username = document.getElementById("username");
 const password = document.getElementById("password");
 const loginBtn = document.getElementById("loginBtn");
 
 const loginValidation = (e) => {
   e.preventDefault();
 
-  if (email.value === "" && password.value === "") {
+  if (username.value === "" && password.value === "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
@@ -40,17 +40,17 @@ const loginValidation = (e) => {
       timer: 2000,
       timerProgressBar: true,
       heightAuto: false,
-      width: "300px",
+      width: "350px",
       color: "#0b132a",
     });
 
     Toast.fire({
       icon: "warning",
       iconColor: "#73adff",
-      title: `<h2>Enter Email and Password</h2>`,
+      title: `<h2>Enter Username and Password</h2>`,
     });
     return false;
-  } else if (email.value === "") {
+  } else if (username .value === "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
@@ -65,7 +65,7 @@ const loginValidation = (e) => {
     Toast.fire({
       icon: "warning",
       iconColor: "#73adff",
-      title: `<h2>Enter Email to Login</h2>`,
+      title: `<h2>Enter Username to Login</h2>`,
     });
     return false;
   } else if (password.value === "") {
@@ -88,7 +88,7 @@ const loginValidation = (e) => {
     return false;
   }
 
-  else if (email.value !== "" && password.value !== "") {
+  else if (username.value !== "" && password.value !== "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",

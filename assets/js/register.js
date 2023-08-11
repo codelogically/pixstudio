@@ -51,8 +51,7 @@ const registerValidation = (e) => {
       title: `<h2>Provide Username, Email and Password</h2>`,
     });
     return false;
-  } 
-  else if (email.value === "") {
+  } else if (email.value === "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
@@ -70,8 +69,7 @@ const registerValidation = (e) => {
       title: `<h2>Provide Your Email</h2>`,
     });
     return false;
-  } 
-  else if (username.value === "") {
+  } else if (username.value === "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
@@ -89,13 +87,7 @@ const registerValidation = (e) => {
       title: `<h2>Provide Your Username</h2>`,
     });
     return false;
-  }
-
-  else if (email.value === "" && password.value === "") {
-
-  }
-  
-  else if (password.value === "") {
+  } else if (password.value === "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
@@ -113,9 +105,7 @@ const registerValidation = (e) => {
       title: `<h2>Create new Password</h2>`,
     });
     return false;
-  }
-
-  else if (email.value !== "" && password.value !== "") {
+  } else if (email.value !== "" && password.value !== "") {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-start",
