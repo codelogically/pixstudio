@@ -29,9 +29,24 @@ closePrev.addEventListener("click", () => {
   previewImage.classList.remove("show-preview");
 });
 
+let downloadLimit = 0;
+console.log(downloadLimit);
+
 downloadImgBtn.addEventListener("click", (e) => {
-  downloadImg(e.target.dataset.downloadableImg); // Downloading Image by Clicking on Download Button
+  downloadLimit += 1;
+
+  if (downloadLimit >= 6) {
+    alert("Your Downloading Exceeded");
+  } else {
+    downloadImg(e.target.dataset.downloadableImg); // Downloading Image by Clicking on Download Button
+  }
 });
+
+// setTimeout(() => {
+//   alert("You can now doenload images");
+//   downloadLimit = 0;
+//   console.log(downloadLimit);
+// }, 10000);
 
 closeFullScreen.addEventListener("click", () => {
   fullScreen.classList.remove("open");
