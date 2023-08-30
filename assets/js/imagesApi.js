@@ -29,25 +29,6 @@ closePrev.addEventListener("click", () => {
   previewImage.classList.remove("show-preview");
 });
 
-let downloadLimit = 0;
-console.log(downloadLimit);
-
-downloadImgBtn.addEventListener("click", (e) => {
-  downloadLimit += 1;
-
-  if (downloadLimit >= 6) {
-    alert("Your Downloading Exceeded");
-  } else {
-    downloadImg(e.target.dataset.downloadableImg); // Downloading Image by Clicking on Download Button
-  }
-});
-
-// setTimeout(() => {
-//   alert("You can now doenload images");
-//   downloadLimit = 0;
-//   console.log(downloadLimit);
-// }, 10000);
-
 closeFullScreen.addEventListener("click", () => {
   fullScreen.classList.remove("open");
   document.body.style.overflow = "auto";
@@ -198,3 +179,50 @@ getImages(
 
 loadMoreBtn.addEventListener("click", loadMoreImages);
 searchImages.addEventListener("keyup", loadSearchedImages);
+
+let downloadLimit = 0;
+
+downloadImgBtn.addEventListener("click", (e) => {
+  downloadLimit++;
+
+  if (downloadLimit >= 3) {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-start",
+      showConfirmButton: false,
+      timer: 5500,
+      timerProgressBar: true,
+      width: "600px",
+      color: "#0b132a",
+    });
+
+    Toast.fire({
+      icon: "warning",
+      iconColor: "#73adff",
+      title: `<h2>Download limit has been exceeded, wait for 24 hours our login to your account</h2>`,
+    });
+
+    setTimeout(() => {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-start",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        heightAuto: false,
+        width: "350px",
+        color: "#0b132a",
+      });
+
+      Toast.fire({
+        icon: "success",
+        iconColor: "#a5dc86",
+        title: `<h2>Download limit has been reset</h2>`,
+      });
+
+      downloadLimit = 0;
+    }, 10000);
+  } else {
+    downloadImg(e.target.dataset.downloadableImg); // Downloading Image by Clicking on Download Button
+  }
+});
