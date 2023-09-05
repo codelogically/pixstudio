@@ -30,9 +30,7 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const registerBtn = document.getElementById("registerBtn");
 
-const registerValidation = (e) => {
-  e.preventDefault();
-
+const registerValidation = () => {
   if (username.value === "" && email.value === "" && password.value === "") {
     const Toast = Swal.mixin({
       toast: true,

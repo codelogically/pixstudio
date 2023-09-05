@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PixStudio - Register</title>
+    <title>PixStudio - Login</title>
 
     <!-- Favicon -->
     <link
@@ -32,7 +32,7 @@
     />
 
     <!-- Css File -->
-    <link rel="stylesheet" href="./assets/css/register.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- Swiper Js CSS File -->
@@ -50,10 +50,10 @@
     </section>
 
     <!-- =========================
-          Register and Slider
+          Login and Slider
     ========================= -->
     <div class="container">
-      <div class="register-wrapper">
+      <div class="login-wrapper">
         <!-- Logo -->
         <div class="logo">
           <a href="./index.html">
@@ -62,13 +62,13 @@
         </div>
 
         <!-- Login Form -->
-        <div class="register-form">
+        <div class="login-form">
           <div class="title">
-            <h1>Welcome to PixStudio</h1>
-            <p>Create new account</p>
+            <h1>Welcome back</h1>
+            <p>Login to your account</p>
           </div>
           <!-- Social Account Login -->
-          <div class="social-media-register">
+          <div class="social-media-login">
             <button><i class="fi fi-brands-google"></i></button>
             <button><i class="fi fi-brands-facebook"></i></button>
             <button><i class="fi fi-brands-twitter"></i></button>
@@ -76,7 +76,7 @@
 
           <form>
             <div class="input-field">
-              <i class="fi fi-rr-user"></i>
+              <i class="fi fi-rr-envelope"></i>
               <input
                 type="text"
                 name="username"
@@ -87,30 +87,22 @@
               />
             </div>
             <div class="input-field">
-              <i class="fi fi-rr-envelope"></i>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Your Email"
-                autocomplete="off"
-              />
-            </div>
-            <div class="input-field">
               <i class="fi fi-rr-lock"></i>
               <input
                 type="password"
                 name="password"
                 id="password"
-                placeholder="Create New Password"
+                placeholder="Enter Your Password"
               />
             </div>
 
-            <div class="registerBtn">
-              <button id="registerBtn">Regiter</button>
+            <a href="#">Forgot Password?</a>
+
+            <div class="loginBtn">
+              <button id="loginBtn">Login</button>
             </div>
 
-            <p>Already have an account? <a href="http://localhost/pixstudio/login.php">Login</a></p>
+            <p>Don't have an account? <a href="./register.php">Register</a></p>
           </form>
         </div>
       </div>
@@ -155,6 +147,6 @@
     <!-- JavaScript File -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/login.js"></script>
   </body>
 </html>
